@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="#"><img src="img/nerds-index/logo-header.png" width="139" height="56" alt="HTML Academy: Нёрдс"></a>
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="basket"><a href="#">Корзина</a></div>
+        <div class="welcome"><span>Добро пожаловать в магазин готовых макетов</span></div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="filters">
+        <form action="#" method="get" name="filters">
+          <fieldset class="filters-price">
+            <h2>Стоимость:</h2>
+            <div class="price-range">
+              <input type="range" name="price-range" min="0" max="20000">
+            </div>
+            <span>от</span> <input type="text" name="price-min" value="0">
+            <span>до</span> <input type="text" name="price-max" value="15000">
+          </fieldset>
+          <fieldset class="filters-grid">
+            <h2>Сетка:</h2>
+            <input type="radio" name="radio-adaptive" id="adaptive"><label for="adaptive">Адаптивная</label>
+            <input type="radio" name="radio-fixed" id="fixed"><label for="fixed">Фиксированная</label>
+            <input type="radio" name="radio-liquid" id="liquid"><label for="liquid">Резиновая</label>
+          </fieldset>
+          <fieldset class="features">
+            <h2>Особенности:</h2>
+            <input type="checkbox" name="checkbox-slider" id="slider"><label for="slider">Слайдер</label>
+            <input type="checkbox" name="checkbox-feaures-block" id="feaures-block"><label for="feaures-block">Блок преимуществ</label>
+            <input type="checkbox" name="checkbox-news" id="news"><label for="news">Новости</label>
+            <input type="checkbox" name="checkbox-gallery" id="gallery"><label for="gallery">Галерея</label>
+            <input type="checkbox" name="checkbox-cart" id="cart"><label for="cart">Корзина</label>
+          </fieldset>
+          <button type="submit" name="filters-show" class="button">Показать</button>
+        </form>
+      </div>
+      <div class="sorting">
+        <span>Сортировать:</span>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По функционалу</a></li>
+        <div class="arrows">
+          <div class="left-arrow"></div>
+          <div class="right-arrow"></div>
+        </div>
+      </div>
+      <div class="content">
+        <article class="layout">
+          <img src="img/nerds-catalog/img-1.png" width="240" height="270" alt="Aviator">
+          <div class="active">
+            <img src="img/nerds-catalog/img-1-active.png" width="240" height="270" alt="Aviator">
+            <div class="layout-info">
+              <span>Aviator</span>
+              <p>Одностраничный макет с авторским дизайном</p>
+              <a class="button" href="#">8000 р.</a>
+            </div>
+          </div>
+        </article>
+        <article class="layout">
+          <img src="img/nerds-catalog/img-2.png" width="240" height="270" alt="Sunset">
+          <div class="active">
+            <img src="img/nerds-catalog/img-2-active.png" width="240" height="270" alt="Sunset">
+            <div class="layout-info">
+              <span>Sunset</span>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <a class="button" href="#">10000 р.</a>
+            </div>
+          </div>
+        </article>
+        <article class="layout">
+          <img src="img/nerds-catalog/img-3.png" width="240" height="270" alt="Forte">
+          <div class="active">
+            <img src="img/nerds-catalog/img-3-active.png" width="240" height="270" alt="Forte">
+            <div class="layout-info">
+              <span>Forte</span>
+              <p>Отличный макет для личного блога</p>
+              <a class="button" href="#">5000 р.</a>
+            </div>
+          </div>
+        </article>
+        <article class="layout">
+          <img src="img/nerds-catalog/img-4.png" width="240" height="270" alt="Modern Organic Thai">
+          <div class="active">
+            <img src="img/nerds-catalog/img-4-active.png" width="240" height="270" alt="Modern Organic Thai">
+            <div class="layout-info">
+              <span>Modern Organic Thai</span>
+              <p>Сайт для ресторана быстрого питания</p>
+              <a class="button" href="#">12000 р.</a>
+            </div>
+          </div>
+        </article>
+        <article class="layout">
+          <img src="img/nerds-catalog/img-5.png" width="240" height="270" alt="Avenue">
+          <div class="active">
+            <img src="img/nerds-catalog/img-5-active.png" width="240" height="270" alt="Avenue">
+            <div class="layout-info">
+              <span>Avenue</span>
+              <p>Макет для блога о путешествиях</p>
+              <a class="button" href="#">8000 р.</a>
+            </div>
+          </div>
+        </article>
+        <article class="layout">
+          <img src="img/nerds-catalog/img-6.png" width="240" height="270" alt="Dovetail">
+          <div class="active">
+            <img src="img/nerds-catalog/img-6-active.png" width="240" height="270" alt="Dovetail">
+            <div class="layout-info">
+              <span>Dovetail</span>
+              <p>Интернет-магазин с галереей товаров</p>
+              <a class="button" href="#">8000 р.</a>
+            </div>
+          </div>
+        </article>
+        <nav class="pages">
+          <ul>
+            <li><a class="button" href="#">1</a></li>
+            <li><a class="button" href="#">2</a></li>
+            <li><a class="button" href="#">3</a></li>
+            <li><a class="button" href="#">Следующая</a></li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="map">
+        <div class="address">
+          <span>NЁRDS DESIGN STUDIO</span>
+          <p>191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="button" href="#">Напишите нам</a>
+        </div>
+      </div>
+      <div class="container">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        <span>Давайте дружить, это выгодно!</span>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+      </div>
+    </footer>
+  </body>
+</html>
