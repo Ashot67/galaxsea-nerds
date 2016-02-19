@@ -119,15 +119,25 @@
     </main>
     <footer class="main-footer">
       <div class="map">
-        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=RqmzwmviDGYibjh0TdOWyrxdFWpMUBVC&width=100%&height=406&lang=ru_UA&sourceType=constructor"></script>
+        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=s5h7SdQA4hwBOUJsNYzxPMu_bprufs7G&width=100%&height=415&lang=ru_UA&sourceType=constructor"></script>
         <div class="container">
           <div class="address">
             <span>NЁRDS DESIGN STUDIO</span>
             <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a class="button" href="#">Напишите нам</a>
+            <a class="button write-us" href="#">Напишите нам</a>
           </div>
+        </div>
+
+        <div class="modal-content">
+          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+          <form action="#" method="post" name="modal-form">
+            <label><span>Ваше имя:</span><br> <input type="text" name="name-field" placeholder="Представьтесь, пожалуйста" required></label>
+            <label><span>Ваш e-mail:</span><br> <input type="email" name="email-field" placeholder="Для отправки ответа" required></label>
+            <label clearfix><span>Текст письма:</span><br> <textarea name="letter-field" rows="5" required>В свободной форме</textarea></label>
+            <button class="button" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
       <div class="container">
@@ -144,5 +154,54 @@
         </div>
       </div>
     </footer>
-  </div>
+
+  <script>
+      var link = document.querySelector(".write-us");
+      var popup = document.querySelector(".modal-content");
+      var close = popup.querySelector(".modal-content-close");
+      var form = popup.querySelector("form");
+      var name = popup.querySelector("[name=name]");
+      var email = popup.querySelector("[name=email]");
+      var storage = localStorage.getItem("name");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+
+        if (storage) {
+          name.value = storage;
+          email.focus();
+        } else {
+          name.focus();
+        }
+
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+      });
+
+      form.addEventListener("submit", function(event) {
+        if (!name.value || !email.value) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+        } else {
+          localStorage.setItem("name", name.value);
+        }
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+    </script>
+ </body>
 </html>
