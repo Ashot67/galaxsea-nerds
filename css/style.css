@@ -1041,6 +1041,8 @@ input[type="checkbox"] {
 
 /* Footer */
 
+/*
+
 .map {
   position: relative;
 
@@ -1052,6 +1054,14 @@ input[type="checkbox"] {
   background-position: top center;
 
   z-index: -1;
+}
+
+*/
+
+.map {
+  position: relative;
+
+  margin-top: 80px;
 }
 
 .address {
@@ -1083,7 +1093,7 @@ input[type="checkbox"] {
 }
 
 .social {
-  margin-top: 70px;
+  margin-top: 90px;
 }
 
 .social-btns {
