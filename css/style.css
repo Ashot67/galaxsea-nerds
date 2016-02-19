@@ -439,13 +439,14 @@ input[type=radio] {
 }
 
 .index-content-logo {
-  margin-bottom: 68px;
   padding-top: 27px;
+  margin-bottom: 65px;
 }
 
 .index-content-logo img {
-  margin-bottom: 20px;
   margin-left: 30px;
+  margin-bottom: 23px;
+
 }
 
 .line {
@@ -1059,15 +1060,13 @@ input[type="checkbox"] {
 */
 
 .map {
-  position: relative;
-
   margin-top: 80px;
 }
 
 .map .container {
-  position: absolute;
-  top: 0;
-  left: 224px;
+  position: relative;
+
+  height: 0;
 }
 
 .address {
