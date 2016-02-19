@@ -439,7 +439,7 @@ input[type=radio] {
 }
 
 .index-content-logo {
-  margin-bottom: 65px;
+  margin-bottom: 68px;
   padding-top: 27px;
 }
 
@@ -1064,10 +1064,16 @@ input[type="checkbox"] {
   margin-top: 80px;
 }
 
+.map .container {
+  position: absolute;
+  top: 0;
+  left: 224px;
+}
+
 .address {
   position: absolute;
-  top: 90px;
-  left: 225px;
+  top: 95px;
+  left: 0;
 
   width: 210px;
   padding: 20px 20px;
@@ -1257,7 +1263,7 @@ input[type="checkbox"] {
 }
 
 .social {
-  margin-top: 90px;
+  margin-top: 85px;
 }
 
 .social-btns {
