@@ -526,7 +526,7 @@ legend {
     width: 50%;
     font-size: 16px;
     text-transform: uppercase;
-    vertical-align: top
+    vertical-align: middle
 }
 
 .price-controls input {
@@ -693,16 +693,8 @@ input[type=checkbox] {
     vertical-align: top
 }
 
-.sorting li {
-    border-bottom: 1px dashed #00ca74
-}
-
 .sorting li:last-child {
     margin-right: 0
-}
-
-.sorting li:hover {
-    border-bottom-style: solid
 }
 
 .sorting li:active {
@@ -712,10 +704,16 @@ input[type=checkbox] {
 .sorting a {
     text-decoration: none;
     color: #000;
+    border-bottom: 1px dashed #00ca74;
     opacity: .3
 }
 
-.sorting a:active,.sorting a:hover {
+.sorting a:hover {
+    opacity: 1;
+    border-bottom-style: solid
+}
+
+.sorting a:active {
     opacity: 1
 }
 
