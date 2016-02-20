@@ -381,48 +381,11 @@ input[type=radio] {
   border-bottom: 2px solid #eeeeee;
 }
 
-.about-us-left {
+.about-us-description {
   float: left;
-  width: 621px;
-}
 
-.list-title {
-  display: block;
-  margin-top: 45px;
-  margin-bottom: 20px;
-
-  text-transform: uppercase;
-}
-
-.about-us-left ul,
-.about-us-right ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.about-us-left li,
-.about-us-right li {
-  position: relative;
-
-  margin-bottom: 22px;
-  padding-left: 37px;
-}
-
-.about-us-left li::after,
-.about-us-right li::after {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 25px;
-  height: 10px;
-
-  background: #ffffff;
-  border-bottom: 2px solid #fb565a;
+  width: 610px;
+  margin-bottom: 28px;
 }
 
 .about-us-title {
@@ -433,20 +396,17 @@ input[type=radio] {
   line-height: 36px;
 }
 
-.about-us-right {
-  float: right;
-  width: 260px;
-}
-
 .index-content-logo {
-  padding-top: 27px;
+  float: right;
+
+  padding-top: 30px;
+  padding-right: 23px;
   margin-bottom: 65px;
 }
 
 .index-content-logo img {
   margin-left: 30px;
-  margin-bottom: 23px;
-
+  margin-bottom: 20px;
 }
 
 .line {
@@ -491,6 +451,51 @@ input[type=radio] {
 .line::after {
   left: 15px;
   margin: -20px -100% 0 0;
+}
+
+.list-products {
+  float: left;
+}
+
+.list-advantages {
+  float: right;
+
+  padding-right: 32px;
+}
+
+.list-title {
+  display: block;
+  margin-bottom: 23px;
+
+  text-transform: uppercase;
+}
+
+.about-us-lists ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about-us-lists li {
+  position: relative;
+
+  margin-bottom: 22px;
+  padding-left: 37px;
+}
+
+.about-us-lists li::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 25px;
+  height: 10px;
+
+  background: #ffffff;
+  border-bottom: 2px solid #fb565a;
 }
 
 .partners {
@@ -1060,6 +1065,8 @@ input[type="checkbox"] {
 */
 
 .map {
+  position: relative;
+
   margin-top: 80px;
 }
 
@@ -1126,7 +1133,7 @@ input[type="checkbox"] {
 
 .modal-content {
   position: absolute;
-  bottom: 50px;
+  bottom: 0;
   left: 50%;
 
   display: none;
