@@ -3,20 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс: Каталог</title>
-    <link href="css/style-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <div class="top-menu clearfix">
           <div class="logo">
-            <a href="#"><img src="img/nerds-index/logo-header.png" width="139" height="56" alt="HTML Academy: Нёрдс"></a>
+            <a href="index.html"><img src="img/nerds-index/logo-header.png" width="139" height="56" alt="HTML Academy: Нёрдс"></a>
           </div>
           <nav class="main-navigation">
             <ul>
               <li><a href="#">Студия</a></li>
               <li><a href="#">Клиенты</a></li>
-              <li><a class="current" href="#">Магазин</a></li>
+              <li><a class="current" href="catalog.html">Магазин</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
           </nav>
@@ -147,7 +148,7 @@
             <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a class="button write-us" href="#">Напишите нам</a>
+            <a class="button write-us" href="contact.html">Напишите нам</a>
           </div>
 
           <div class="modal-content">
@@ -155,7 +156,7 @@
           <form action="#" method="post" name="modal-form">
             <label><span>Ваше имя:</span><br> <input type="text" name="name" placeholder="Представьтесь, пожалуйста" required></label>
             <label><span>Ваш e-mail:</span><br> <input type="email" name="email" placeholder="Для отправки ответа" required></label>
-            <label clearfix><span>Текст письма:</span><br> <textarea name="letter" rows="5" required>В свободной форме</textarea></label>
+            <label><span>Текст письма:</span><br> <textarea name="letter" rows="5" required>В свободной форме</textarea></label>
             <a class="button" href="#">Отправить</a>
           </form>
         </div>

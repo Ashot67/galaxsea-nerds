@@ -158,7 +158,7 @@ input[type=radio] {
     display: none
 }
 
-#button-1:checked~.slider-inner .slide:nth-child(1),#button-2:checked~.slider-inner .slide:nth-child(2),#button-3:checked~.slider-inner .slide:nth-child(3) {
+.slider input[type=radio]:nth-child(1):checked~.slider-inner .slide:nth-child(1),.slider input[type=radio]:nth-child(2):checked~.slider-inner .slide:nth-child(2),.slider input[type=radio]:nth-child(3):checked~.slider-inner .slide:nth-child(3) {
     display: block
 }
 
@@ -525,7 +525,8 @@ legend {
     display: inline-block;
     width: 50%;
     font-size: 16px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    vertical-align: top
 }
 
 .price-controls input {
@@ -688,7 +689,8 @@ input[type=checkbox] {
 .sorting li,.sorting span {
     display: inline-block;
     margin-right: 40px;
-    font-size: 12px
+    font-size: 12px;
+    vertical-align: top
 }
 
 .sorting li {
@@ -858,7 +860,8 @@ input[type=checkbox] {
     display: inline-block;
     margin-right: 10px;
     font-size: 12px;
-    line-height: 18px
+    line-height: 18px;
+    vertical-align: top
 }
 
 .pages .button {
@@ -874,6 +877,8 @@ input[type=checkbox] {
 }
 
 .pages .current-page {
+    width: 36px;
+    line-height: 14px;
     background: 0 0;
     border: 2px solid #f2f2f2
 }
@@ -994,18 +999,25 @@ input[type=checkbox] {
     }
 }
 
-.modal-content {
-    position: absolute;
-    bottom: 0;
+.contact-content,.modal-content {
+    bottom: 15%;
     left: 50%;
-    display: none;
     width: 630px;
     padding: 55px 80px;
     margin-left: -315px;
-    background: #fff;
     box-sizing: border-box;
+    z-index: 2
+}
+
+.modal-content {
+    display: none;
+    background: #fff;
     box-shadow: 0 20px 40px 0 rgba(0,0,0,.8);
-    z-index: 1
+    position: fixed
+}
+
+.contact-content {
+    position: relative
 }
 
 .modal-content-close {
@@ -1043,26 +1055,26 @@ input[type=checkbox] {
     transform: rotate(-45deg)
 }
 
-.modal-content form {
+.contact-content form,.modal-content form {
     margin: 0
 }
 
-.modal-content label:first-child {
+.contact-content label:first-child,.modal-content label:first-child {
     float: left;
     margin-bottom: 20px
 }
 
-.modal-content label:nth-child(2) {
+.contact-content label:nth-child(2),.modal-content label:nth-child(2) {
     float: right
 }
 
-.modal-content label span {
+.contact-content label span,.modal-content label span {
     display: block;
     width: 220px;
     line-height: 18px
 }
 
-.modal-content input[type=email],.modal-content input[type=text] {
+.contact-content input[type=email],.contact-content input[type=text],.modal-content input[type=email],.modal-content input[type=text] {
     width: 220px;
     padding: 10px 12px;
     font-size: 12px;
@@ -1073,11 +1085,11 @@ input[type=checkbox] {
     box-sizing: border-box
 }
 
-.modal-content input[type=email]:hover,.modal-content input[type=text]:hover,.modal-content textarea:hover {
+.contact-content input[type=email]:hover,.contact-content input[type=text]:hover,.contact-content textarea:hover,.modal-content input[type=email]:hover,.modal-content input[type=text]:hover,.modal-content textarea:hover {
     border-color: #a2a9ac
 }
 
-.modal-content input[type=email]:focus,.modal-content input[type=text]:focus,.modal-content textarea:focus {
+.contact-content input[type=email]:focus,.contact-content input[type=text]:focus,.contact-content textarea:focus,.modal-content input[type=email]:focus,.modal-content input[type=text]:focus,.modal-content textarea:focus {
     border-color: #56bffb
 }
 
@@ -1093,7 +1105,7 @@ input[type=checkbox] {
     color: #000
 }
 
-.modal-content textarea {
+.contact-content textarea,.modal-content textarea {
     width: 100%;
     padding: 10px 12px;
     margin-bottom: 50px;
@@ -1105,7 +1117,7 @@ input[type=checkbox] {
     box-sizing: border-box
 }
 
-.modal-content .button {
+.contact-content .button,.modal-content .button {
     width: 100%;
     border: none
 }
